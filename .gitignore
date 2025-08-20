@@ -32,4 +32,4 @@ dist-ssr
 
 *.zip
 gradle/
-build/
+build/android/gradle.zip
