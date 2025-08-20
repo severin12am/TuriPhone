@@ -3,7 +3,7 @@ package com.turi.languagelearning
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
-@HiltAndroidApp
+// @HiltAndroidApp // Temporarily disabled
 class TuriApplication : Application() {
     
     override fun onCreate() {

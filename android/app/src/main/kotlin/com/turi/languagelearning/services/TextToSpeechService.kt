@@ -26,7 +26,7 @@ class TextToSpeechService @Inject constructor(
 ) {
     
     private var tts: TextToSpeech? = null
-    private val _state = MutableStateFlow(TtsState())
+    private val _state = MutableStateFlow<TtsState>(TtsState())
     val state: StateFlow<TtsState> = _state.asStateFlow()
     
     private val languageMap = mapOf(

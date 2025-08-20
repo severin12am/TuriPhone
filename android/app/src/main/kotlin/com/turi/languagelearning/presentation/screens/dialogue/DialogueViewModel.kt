@@ -22,13 +22,16 @@ data class DialogueUiState(
     val error: String? = null
 )
 
-@HiltViewModel
-class DialogueViewModel @Inject constructor(
+// @HiltViewModel // Temporarily disabled
+class DialogueViewModel /* @Inject constructor(
     private val ttsService: TextToSpeechService,
     private val geminiService: GeminiService
-) : ViewModel() {
+) */ : ViewModel() {
+    // Temporary mock dependencies
+    private val ttsService: TextToSpeechService? = null
+    private val geminiService: GeminiService? = null
     
-    private val _uiState = MutableStateFlow(DialogueUiState())
+    private val _uiState = MutableStateFlow<DialogueUiState>(DialogueUiState())
     val uiState: StateFlow<DialogueUiState> = _uiState.asStateFlow()
     
     fun startDialogue(characterId: String, characterName: String) {

@@ -22,8 +22,6 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
-
-        // Removed NDK configuration - using pure Kotlin/Compose approach
     }
 
     buildTypes {
@@ -49,13 +47,15 @@ android {
 
     kotlinOptions {
         jvmTarget = "17"
-        languageVersion = "2.2"
-        apiVersion = "2.2"
     }
 
     buildFeatures {
         compose = true
         viewBinding = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "2.2.0"
     }
 
     packaging {
@@ -64,7 +64,7 @@ android {
         }
     }
 
-    // Removed NDK and CMake configuration - using pure Kotlin/Compose approach
+
 }
 
 dependencies {
@@ -82,7 +82,7 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.material:material-icons-extended")
     
-    // Material Design Components (for Android themes)
+    // Material Design Components
     implementation("com.google.android.material:material:1.11.0")
     
     // Navigation
@@ -94,8 +94,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
     
     // Dependency Injection - Hilt
-    implementation("com.google.dagger:hilt-android:2.48.1")
-    ksp("com.google.dagger:hilt-android-compiler:2.48.1")
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    ksp("com.google.dagger:hilt-compiler:2.51.1")
     
     // Networking
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
@@ -103,7 +103,7 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
     
-    // Supabase (compatible with Kotlin 2.1.0)
+    // Supabase
     implementation("io.github.jan-tennert.supabase:postgrest-kt:3.2.2")
     implementation("io.github.jan-tennert.supabase:auth-kt:3.2.2")
     implementation("io.github.jan-tennert.supabase:realtime-kt:3.2.2")
@@ -137,7 +137,7 @@ dependencies {
     // Permissions
     implementation("com.google.accompanist:accompanist-permissions:0.32.0")
     
-    // 3D Graphics (Alternative to raw Vulkan - we'll use this initially)
+    // 3D Graphics
     implementation("org.rajawali3d:rajawali:1.2.1970")
     
     // Testing
@@ -153,4 +153,3 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
-

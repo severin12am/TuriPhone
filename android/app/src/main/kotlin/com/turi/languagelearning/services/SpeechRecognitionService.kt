@@ -25,13 +25,15 @@ data class SpeechRecognitionState(
     val partialResults: List<String> = emptyList()
 )
 
-@Singleton
-class SpeechRecognitionService @Inject constructor(
+// @Singleton // Temporarily disabled
+class SpeechRecognitionService /* @Inject constructor(
     @ApplicationContext private val context: Context
-) {
+) */ {
+    // Temporary mock dependency
+    private val context: Context? = null
     
     private var speechRecognizer: SpeechRecognizer? = null
-    private val _state = MutableStateFlow(SpeechRecognitionState())
+    private val _state = MutableStateFlow<SpeechRecognitionState>(SpeechRecognitionState())
     val state: StateFlow<SpeechRecognitionState> = _state.asStateFlow()
     
     private val languageMap = mapOf(

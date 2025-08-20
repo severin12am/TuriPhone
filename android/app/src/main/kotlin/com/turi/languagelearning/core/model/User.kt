@@ -9,8 +9,8 @@ data class User(
     val displayName: String?,
     val preferredLanguage: Language = Language.ENGLISH,
     val nativeLanguage: Language = Language.ENGLISH,
-    val createdAt: Long = System.currentTimeMillis(),
-    val lastActiveAt: Long = System.currentTimeMillis()
+    val createdAt: Long = 0L,
+    val lastActiveAt: Long = 0L
 )
 
 /**
@@ -24,7 +24,7 @@ data class LearningProgress(
     val timeSpentMinutes: Int = 0,
     val currentLevel: Int = 1,
     val experiencePoints: Int = 0,
-    val lastSessionAt: Long = System.currentTimeMillis()
+    val lastSessionAt: Long = 0L
 )
 
 /**

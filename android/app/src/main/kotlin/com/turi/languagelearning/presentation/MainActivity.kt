@@ -17,7 +17,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import com.turi.languagelearning.presentation.navigation.TuriNavigation
 import com.turi.languagelearning.presentation.theme.TuriLanguageLearningTheme
 
-@AndroidEntryPoint
+// @AndroidEntryPoint // Temporarily disabled
 class MainActivity : ComponentActivity() {
     
     override fun onCreate(savedInstanceState: Bundle?) {

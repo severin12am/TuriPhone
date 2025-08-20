@@ -12,5 +12,5 @@ data class UserEntity(
     val targetLanguage: String,
     val totalMinutes: Int = 0,
     val isAuthenticated: Boolean = false,
-    val lastSyncTime: Long = System.currentTimeMillis()
+    val lastSyncTime: Long = 0L
 )

@@ -4,7 +4,7 @@
             "outputFile": "com.turi.languagelearning.test.app-mergeDebugAndroidTestResources-34:/values-am/values-am.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sever\\.gradle\\caches\\8.13\\transforms\\19e527de233b2c68943e5793e4920ab3\\transformed\\core-1.13.1\\res\\values-am\\values-am.xml",
+                    "source": "C:\\Users\\sever\\.gradle\\caches\\8.13\\transforms\\a4cd78a033173b5a376b1805e5a927de\\transformed\\core-1.13.1\\res\\values-am\\values-am.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sever\\.gradle\\caches\\8.13\\transforms\\36d7d829f6bf4e0d4fdcd86edb8ae779\\transformed\\ui-release\\res\\values-am\\values-am.xml",
+                    "source": "C:\\Users\\sever\\.gradle\\caches\\8.13\\transforms\\69d3047dd629d1fded8331e28f598424\\transformed\\ui-release\\res\\values-am\\values-am.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

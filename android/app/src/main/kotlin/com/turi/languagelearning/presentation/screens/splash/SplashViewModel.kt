@@ -22,12 +22,14 @@ data class SplashUiState(
     val navigationDestination: SplashNavigationDestination? = null
 )
 
-@HiltViewModel
-class SplashViewModel @Inject constructor(
+// @HiltViewModel // Temporarily disabled
+class SplashViewModel /* @Inject constructor(
     private val userDao: UserDao
-) : ViewModel() {
+) */ : ViewModel() {
+    // Temporary mock dependency
+    private val userDao: UserDao? = null
     
-    private val _uiState = MutableStateFlow(SplashUiState())
+    private val _uiState = MutableStateFlow<SplashUiState>(SplashUiState())
     val uiState: StateFlow<SplashUiState> = _uiState.asStateFlow()
     
     init {

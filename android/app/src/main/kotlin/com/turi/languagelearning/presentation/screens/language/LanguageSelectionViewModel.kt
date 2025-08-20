@@ -20,10 +20,10 @@ data class LanguageSelectionUiState(
     val isLoading: Boolean = false
 )
 
-@HiltViewModel
-class LanguageSelectionViewModel @Inject constructor() : ViewModel() {
+// @HiltViewModel // Temporarily disabled
+class LanguageSelectionViewModel /* @Inject constructor() */ : ViewModel() {
     
-    private val _uiState = MutableStateFlow(LanguageSelectionUiState())
+    private val _uiState = MutableStateFlow<LanguageSelectionUiState>(LanguageSelectionUiState())
     val uiState: StateFlow<LanguageSelectionUiState> = _uiState.asStateFlow()
     
     fun selectMotherLanguage(languageCode: String) {

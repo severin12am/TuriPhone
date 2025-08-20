@@ -19,12 +19,10 @@ data class LoginUiState(
     val isLoginSuccessful: Boolean = false
 )
 
-@HiltViewModel
-class LoginViewModel @Inject constructor(
-    // TODO: Inject AuthRepository when created
-) : ViewModel() {
+// @HiltViewModel // Temporarily disabled
+class LoginViewModel /* @Inject constructor() */ : ViewModel() {
     
-    private val _uiState = MutableStateFlow(LoginUiState())
+    private val _uiState = MutableStateFlow<LoginUiState>(LoginUiState())
     val uiState: StateFlow<LoginUiState> = _uiState.asStateFlow()
     
     fun updateEmail(email: String) {

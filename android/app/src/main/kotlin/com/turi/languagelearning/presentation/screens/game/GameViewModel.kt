@@ -18,12 +18,10 @@ data class GameUiState(
     val isQuizActive: Boolean = false
 )
 
-@HiltViewModel
-class GameViewModel @Inject constructor(
-    // Removed NativeRenderer dependency - using pure Compose approach
-) : ViewModel() {
+// @HiltViewModel // Temporarily disabled
+class GameViewModel /* @Inject constructor() */ : ViewModel() {
     
-    private val _uiState = MutableStateFlow(GameUiState())
+    private val _uiState = MutableStateFlow<GameUiState>(GameUiState())
     val uiState: StateFlow<GameUiState> = _uiState.asStateFlow()
     
     init {
