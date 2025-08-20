@@ -1,0 +1,330 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.turi.languagelearning.debug"
+4    android:versionCode="1"
+5    android:versionName="1.0.0-debug" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Network permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:7:5-79
+13-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:7:22-76
+14
+15    <!-- Audio permissions -->
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:10:5-71
+16-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:10:22-68
+17    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+17-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:11:5-80
+17-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:11:22-77
+18
+19    <!-- Storage permissions -->
+20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+20-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:14:5-80
+20-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:14:22-77
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:15:5-16:40
+21-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:15:22-78
+22
+23    <!-- Vibration for haptic feedback -->
+24    <uses-permission android:name="android.permission.VIBRATE" />
+24-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:19:5-66
+24-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:19:22-63
+25
+26    <!-- OpenGL ES & Vulkan features -->
+27    <uses-feature
+27-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:22:5-24:35
+28        android:glEsVersion="0x00030000"
+28-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:23:9-41
+29        android:required="true" />
+29-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:24:9-32
+30    <uses-feature
+30-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:26:5-29:36
+31        android:name="android.hardware.vulkan.version"
+31-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:27:9-55
+32        android:required="false"
+32-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:29:9-33
+33        android:version="0x400003" />
+33-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:28:9-35
+34    <uses-feature
+34-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:31:5-34:36
+35        android:name="android.hardware.vulkan.level"
+35-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:32:9-53
+36        android:required="false"
+36-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:34:9-33
+37        android:version="1" />
+37-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:33:9-28
+38
+39    <!-- Audio features -->
+40    <uses-feature
+40-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:37:5-39:35
+41        android:name="android.hardware.microphone"
+41-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:38:9-51
+42        android:required="true" />
+42-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:39:9-32
+43    <uses-feature
+43-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:41:5-43:35
+44        android:name="android.hardware.audio.output"
+44-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:42:9-53
+45        android:required="true" />
+45-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:43:9-32
+46
+47    <permission
+47-->[androidx.core:core:1.13.1] C:\Users\sever\.gradle\caches\8.13\transforms\19e527de233b2c68943e5793e4920ab3\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+48        android:name="com.turi.languagelearning.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48-->[androidx.core:core:1.13.1] C:\Users\sever\.gradle\caches\8.13\transforms\19e527de233b2c68943e5793e4920ab3\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+49        android:protectionLevel="signature" />
+49-->[androidx.core:core:1.13.1] C:\Users\sever\.gradle\caches\8.13\transforms\19e527de233b2c68943e5793e4920ab3\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+50
+51    <uses-permission android:name="com.turi.languagelearning.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+51-->[androidx.core:core:1.13.1] C:\Users\sever\.gradle\caches\8.13\transforms\19e527de233b2c68943e5793e4920ab3\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+51-->[androidx.core:core:1.13.1] C:\Users\sever\.gradle\caches\8.13\transforms\19e527de233b2c68943e5793e4920ab3\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+52
+53    <application
+53-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:45:5-72:19
+54        android:name="com.turi.languagelearning.TuriApplication"
+54-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:46:9-40
+55        android:allowBackup="true"
+55-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:47:9-35
+56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+56-->[androidx.core:core:1.13.1] C:\Users\sever\.gradle\caches\8.13\transforms\19e527de233b2c68943e5793e4920ab3\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+57        android:dataExtractionRules="@xml/data_extraction_rules"
+57-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:48:9-65
+58        android:debuggable="true"
+59        android:extractNativeLibs="false"
+60        android:fullBackupContent="@xml/backup_rules"
+60-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:49:9-54
+61        android:hardwareAccelerated="true"
+61-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:55:9-43
+62        android:icon="@mipmap/ic_launcher"
+62-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:50:9-43
+63        android:label="@string/app_name"
+63-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:51:9-41
+64        android:roundIcon="@mipmap/ic_launcher_round"
+64-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:52:9-54
+65        android:supportsRtl="true"
+65-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:53:9-35
+66        android:theme="@style/Theme.TuriLanguageLearning" >
+66-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:54:9-58
+67        <activity
+67-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:58:9-71:20
+68            android:name="com.turi.languagelearning.presentation.MainActivity"
+68-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:59:13-54
+69            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+69-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:64:13-129
+70            android:exported="true"
+70-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:60:13-36
+71            android:label="@string/app_name"
+71-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:61:13-45
+72            android:screenOrientation="landscape"
+72-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:63:13-50
+73            android:theme="@style/Theme.TuriLanguageLearning"
+73-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:62:13-62
+74            android:windowSoftInputMode="adjustResize" >
+74-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:65:13-55
+75            <intent-filter>
+75-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:67:13-70:29
+76                <action android:name="android.intent.action.MAIN" />
+76-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:68:17-69
+76-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:68:25-66
+77
+78                <category android:name="android.intent.category.LAUNCHER" />
+78-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:69:17-77
+78-->C:\Users\sever\Desktop\copies\TuriPhone\Turi-Beta\android\app\src\main\AndroidManifest.xml:69:27-74
+79            </intent-filter>
+80        </activity>
+81
+82        <service
+82-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\sever\.gradle\caches\8.13\transforms\4a6de1ef7cbd19715825d11605b3fab2\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:9:9-15:19
+83            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+83-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\sever\.gradle\caches\8.13\transforms\4a6de1ef7cbd19715825d11605b3fab2\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:10:13-91
+84            android:directBootAware="true"
+84-->[com.google.mlkit:common:18.8.0] C:\Users\sever\.gradle\caches\8.13\transforms\b1ef3f3d60ce09df73bd7d8c0a8c1c35\transformed\common-18.8.0\AndroidManifest.xml:17:13-43
+85            android:exported="false" >
+85-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\sever\.gradle\caches\8.13\transforms\4a6de1ef7cbd19715825d11605b3fab2\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:11:13-37
+86            <meta-data
+86-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\sever\.gradle\caches\8.13\transforms\4a6de1ef7cbd19715825d11605b3fab2\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:12:13-14:85
+87                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+87-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\sever\.gradle\caches\8.13\transforms\4a6de1ef7cbd19715825d11605b3fab2\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:13:17-114
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\sever\.gradle\caches\8.13\transforms\4a6de1ef7cbd19715825d11605b3fab2\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:14:17-82
+89            <meta-data
+89-->[com.google.mlkit:vision-common:17.3.0] C:\Users\sever\.gradle\caches\8.13\transforms\10c8176dd390ad87f1725bb843688c21\transformed\vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+90                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+90-->[com.google.mlkit:vision-common:17.3.0] C:\Users\sever\.gradle\caches\8.13\transforms\10c8176dd390ad87f1725bb843688c21\transformed\vision-common-17.3.0\AndroidManifest.xml:13:17-124
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.mlkit:vision-common:17.3.0] C:\Users\sever\.gradle\caches\8.13\transforms\10c8176dd390ad87f1725bb843688c21\transformed\vision-common-17.3.0\AndroidManifest.xml:14:17-82
+92            <meta-data
+92-->[com.google.mlkit:common:18.8.0] C:\Users\sever\.gradle\caches\8.13\transforms\b1ef3f3d60ce09df73bd7d8c0a8c1c35\transformed\common-18.8.0\AndroidManifest.xml:20:13-22:85
+93                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+93-->[com.google.mlkit:common:18.8.0] C:\Users\sever\.gradle\caches\8.13\transforms\b1ef3f3d60ce09df73bd7d8c0a8c1c35\transformed\common-18.8.0\AndroidManifest.xml:21:17-120
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.mlkit:common:18.8.0] C:\Users\sever\.gradle\caches\8.13\transforms\b1ef3f3d60ce09df73bd7d8c0a8c1c35\transformed\common-18.8.0\AndroidManifest.xml:22:17-82
+95        </service>
+96
+97        <provider
+97-->[com.google.mlkit:common:18.8.0] C:\Users\sever\.gradle\caches\8.13\transforms\b1ef3f3d60ce09df73bd7d8c0a8c1c35\transformed\common-18.8.0\AndroidManifest.xml:9:9-13:38
+98            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+98-->[com.google.mlkit:common:18.8.0] C:\Users\sever\.gradle\caches\8.13\transforms\b1ef3f3d60ce09df73bd7d8c0a8c1c35\transformed\common-18.8.0\AndroidManifest.xml:10:13-78
+99            android:authorities="com.turi.languagelearning.debug.mlkitinitprovider"
+99-->[com.google.mlkit:common:18.8.0] C:\Users\sever\.gradle\caches\8.13\transforms\b1ef3f3d60ce09df73bd7d8c0a8c1c35\transformed\common-18.8.0\AndroidManifest.xml:11:13-69
+100            android:exported="false"
+100-->[com.google.mlkit:common:18.8.0] C:\Users\sever\.gradle\caches\8.13\transforms\b1ef3f3d60ce09df73bd7d8c0a8c1c35\transformed\common-18.8.0\AndroidManifest.xml:12:13-37
+101            android:initOrder="99" />
+101-->[com.google.mlkit:common:18.8.0] C:\Users\sever\.gradle\caches\8.13\transforms\b1ef3f3d60ce09df73bd7d8c0a8c1c35\transformed\common-18.8.0\AndroidManifest.xml:13:13-35
+102
+103        <activity
+103-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\sever\.gradle\caches\8.13\transforms\50fbea0fe16ebea2f9ed5c11be71fb51\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+104            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+104-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\sever\.gradle\caches\8.13\transforms\50fbea0fe16ebea2f9ed5c11be71fb51\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+105            android:exported="false"
+105-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\sever\.gradle\caches\8.13\transforms\50fbea0fe16ebea2f9ed5c11be71fb51\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+106            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+106-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\sever\.gradle\caches\8.13\transforms\50fbea0fe16ebea2f9ed5c11be71fb51\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+107
+108        <meta-data
+108-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sever\.gradle\caches\8.13\transforms\01b428aca87dc8dec8ca4c75ae185a70\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+109            android:name="com.google.android.gms.version"
+109-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sever\.gradle\caches\8.13\transforms\01b428aca87dc8dec8ca4c75ae185a70\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+110            android:value="@integer/google_play_services_version" />
+110-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sever\.gradle\caches\8.13\transforms\01b428aca87dc8dec8ca4c75ae185a70\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+111
+112        <activity
+112-->[androidx.compose.ui:ui-tooling-android:1.7.8] C:\Users\sever\.gradle\caches\8.13\transforms\a99a2149c2a6caddb245f06f1bf9785f\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+113            android:name="androidx.compose.ui.tooling.PreviewActivity"
+113-->[androidx.compose.ui:ui-tooling-android:1.7.8] C:\Users\sever\.gradle\caches\8.13\transforms\a99a2149c2a6caddb245f06f1bf9785f\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+114            android:exported="true" />
+114-->[androidx.compose.ui:ui-tooling-android:1.7.8] C:\Users\sever\.gradle\caches\8.13\transforms\a99a2149c2a6caddb245f06f1bf9785f\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+115
+116        <provider
+116-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.2] C:\Users\sever\.gradle\caches\8.13\transforms\b4823b59783f0c38b4d0294ac3a4f13d\transformed\auth-kt-debug\AndroidManifest.xml:9:9-17:20
+117            android:name="androidx.startup.InitializationProvider"
+117-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.2] C:\Users\sever\.gradle\caches\8.13\transforms\b4823b59783f0c38b4d0294ac3a4f13d\transformed\auth-kt-debug\AndroidManifest.xml:10:13-67
+118            android:authorities="com.turi.languagelearning.debug.androidx-startup"
+118-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.2] C:\Users\sever\.gradle\caches\8.13\transforms\b4823b59783f0c38b4d0294ac3a4f13d\transformed\auth-kt-debug\AndroidManifest.xml:11:13-68
+119            android:exported="false" >
+119-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.2] C:\Users\sever\.gradle\caches\8.13\transforms\b4823b59783f0c38b4d0294ac3a4f13d\transformed\auth-kt-debug\AndroidManifest.xml:12:13-37
+120            <meta-data
+120-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.2] C:\Users\sever\.gradle\caches\8.13\transforms\b4823b59783f0c38b4d0294ac3a4f13d\transformed\auth-kt-debug\AndroidManifest.xml:14:13-16:52
+121                android:name="io.github.jan.supabase.auth.SupabaseInitializer"
+121-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.2] C:\Users\sever\.gradle\caches\8.13\transforms\b4823b59783f0c38b4d0294ac3a4f13d\transformed\auth-kt-debug\AndroidManifest.xml:15:17-79
+122                android:value="androidx.startup" />
+122-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.2] C:\Users\sever\.gradle\caches\8.13\transforms\b4823b59783f0c38b4d0294ac3a4f13d\transformed\auth-kt-debug\AndroidManifest.xml:16:17-49
+123            <meta-data
+123-->[androidx.emoji2:emoji2:1.3.0] C:\Users\sever\.gradle\caches\8.13\transforms\39f265a2ec3c260fdae905a19981c196\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+124                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+124-->[androidx.emoji2:emoji2:1.3.0] C:\Users\sever\.gradle\caches\8.13\transforms\39f265a2ec3c260fdae905a19981c196\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+125                android:value="androidx.startup" />
+125-->[androidx.emoji2:emoji2:1.3.0] C:\Users\sever\.gradle\caches\8.13\transforms\39f265a2ec3c260fdae905a19981c196\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+126            <meta-data
+126-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\sever\.gradle\caches\8.13\transforms\357113b710e40be72c16029c857b9423\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:29:13-31:52
+127                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+127-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\sever\.gradle\caches\8.13\transforms\357113b710e40be72c16029c857b9423\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:30:17-78
+128                android:value="androidx.startup" />
+128-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\sever\.gradle\caches\8.13\transforms\357113b710e40be72c16029c857b9423\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:31:17-49
+129            <meta-data
+129-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.3.0] C:\Users\sever\.gradle\caches\8.13\transforms\7249414f52374d30976ffa09731066d6\transformed\multiplatform-settings-no-arg-debug\AndroidManifest.xml:29:13-31:52
+130                android:name="com.russhwolf.settings.SettingsInitializer"
+130-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.3.0] C:\Users\sever\.gradle\caches\8.13\transforms\7249414f52374d30976ffa09731066d6\transformed\multiplatform-settings-no-arg-debug\AndroidManifest.xml:30:17-74
+131                android:value="androidx.startup" />
+131-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.3.0] C:\Users\sever\.gradle\caches\8.13\transforms\7249414f52374d30976ffa09731066d6\transformed\multiplatform-settings-no-arg-debug\AndroidManifest.xml:31:17-49
+132            <meta-data
+132-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+133                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+133-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+134                android:value="androidx.startup" />
+134-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+135        </provider>
+136
+137        <activity
+137-->[androidx.compose.ui:ui-test-manifest:1.7.8] C:\Users\sever\.gradle\caches\8.13\transforms\49335ac528c688894762767c4eaf6183\transformed\ui-test-manifest-1.7.8\AndroidManifest.xml:23:9-25:39
+138            android:name="androidx.activity.ComponentActivity"
+138-->[androidx.compose.ui:ui-test-manifest:1.7.8] C:\Users\sever\.gradle\caches\8.13\transforms\49335ac528c688894762767c4eaf6183\transformed\ui-test-manifest-1.7.8\AndroidManifest.xml:24:13-63
+139            android:exported="true" />
+139-->[androidx.compose.ui:ui-test-manifest:1.7.8] C:\Users\sever\.gradle\caches\8.13\transforms\49335ac528c688894762767c4eaf6183\transformed\ui-test-manifest-1.7.8\AndroidManifest.xml:25:13-36
+140
+141        <service
+141-->[androidx.room:room-runtime:2.6.1] C:\Users\sever\.gradle\caches\8.13\transforms\5e80035f7a7daa78476c37f059fbdf5c\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+142            android:name="androidx.room.MultiInstanceInvalidationService"
+142-->[androidx.room:room-runtime:2.6.1] C:\Users\sever\.gradle\caches\8.13\transforms\5e80035f7a7daa78476c37f059fbdf5c\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+143            android:directBootAware="true"
+143-->[androidx.room:room-runtime:2.6.1] C:\Users\sever\.gradle\caches\8.13\transforms\5e80035f7a7daa78476c37f059fbdf5c\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+144            android:exported="false" />
+144-->[androidx.room:room-runtime:2.6.1] C:\Users\sever\.gradle\caches\8.13\transforms\5e80035f7a7daa78476c37f059fbdf5c\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+145
+146        <receiver
+146-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+147            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+147-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+148            android:directBootAware="false"
+148-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+149            android:enabled="true"
+149-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+150            android:exported="true"
+150-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+151            android:permission="android.permission.DUMP" >
+151-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+152            <intent-filter>
+152-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+153                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+153-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+153-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+154            </intent-filter>
+155            <intent-filter>
+155-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+156                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+156-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+156-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+157            </intent-filter>
+158            <intent-filter>
+158-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+159                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+159-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+159-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+160            </intent-filter>
+161            <intent-filter>
+161-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+162                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+162-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+162-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sever\.gradle\caches\8.13\transforms\bef3dd1dcf3b47d620f390fe1bd0fd28\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+163            </intent-filter>
+164        </receiver>
+165
+166        <service
+166-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sever\.gradle\caches\8.13\transforms\46c05cc68fcf27fe51a58bbba5d2ab5e\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+167            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+167-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sever\.gradle\caches\8.13\transforms\46c05cc68fcf27fe51a58bbba5d2ab5e\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+168            android:exported="false" >
+168-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sever\.gradle\caches\8.13\transforms\46c05cc68fcf27fe51a58bbba5d2ab5e\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+169            <meta-data
+169-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sever\.gradle\caches\8.13\transforms\46c05cc68fcf27fe51a58bbba5d2ab5e\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+170                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+170-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sever\.gradle\caches\8.13\transforms\46c05cc68fcf27fe51a58bbba5d2ab5e\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+171                android:value="cct" />
+171-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sever\.gradle\caches\8.13\transforms\46c05cc68fcf27fe51a58bbba5d2ab5e\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+172        </service>
+173        <service
+173-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sever\.gradle\caches\8.13\transforms\507f3bf413e98fe77cff68a1e19fd534\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+174            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+174-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sever\.gradle\caches\8.13\transforms\507f3bf413e98fe77cff68a1e19fd534\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+175            android:exported="false"
+175-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sever\.gradle\caches\8.13\transforms\507f3bf413e98fe77cff68a1e19fd534\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+176            android:permission="android.permission.BIND_JOB_SERVICE" >
+176-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sever\.gradle\caches\8.13\transforms\507f3bf413e98fe77cff68a1e19fd534\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+177        </service>
+178
+179        <receiver
+179-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sever\.gradle\caches\8.13\transforms\507f3bf413e98fe77cff68a1e19fd534\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+180            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+180-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sever\.gradle\caches\8.13\transforms\507f3bf413e98fe77cff68a1e19fd534\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+181            android:exported="false" />
+181-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sever\.gradle\caches\8.13\transforms\507f3bf413e98fe77cff68a1e19fd534\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+182    </application>
+183
+184</manifest>
