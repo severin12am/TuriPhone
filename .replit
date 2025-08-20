@@ -1,4 +1,20 @@
 modules = ["web"]
+run = "cd android && ./gradlew assembleDebug"
 
 [nix]
 channel = "stable-25_05"
+
+[workflows]
+runButton = "Android Build"
+
+[[workflows.workflow]]
+name = "Android Build"
+author = 41095766
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd android && ./gradlew assembleDebug"
+
+[deployment]
+run = ["sh", "-c", "cd android && ./gradlew assembleDebug"]
