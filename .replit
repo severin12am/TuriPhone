@@ -14,7 +14,7 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd android && ./gradlew assembleDebug"
+args = "export JAVA_HOME=/nix/store/5gz5dskpy4cfm3i63jrzlv0yc9lai3vk-openjdk-19.0.2+7 && export ANDROID_HOME=~/.android/sdk && export ANDROID_SDK_ROOT=~/.android/sdk && export PATH=$JAVA_HOME/bin:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH && cd android && ./gradlew assembleDebug"
 
 [deployment]
 run = ["sh", "-c", "cd android && ./gradlew assembleDebug"]
